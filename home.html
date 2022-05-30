@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+  img.logo {
+    width: 12%;
+    border-radius: 50%;
+  }
+  .buttonb {
+  background-color: #555555;
+  float:right;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  #logo {
+  float: left;
+}
+  .header {
+    margin-top: 0px ;
+    margin-left: 0px ;
+    margin-right: 0px ;
+padding: 20px 10px;
+text-align: center;
+background: #D0C9C0;
+color: #3A3845;
+font-size: 20px;
+}
+  </style>
+  <meta charset="utf-8">
+  <title>Blockrealty</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/social.css">
+<link rel="stylesheet" href="css/slide.css">
+</head>
+
+<body>
+  <div class="mainload">
+    <div class="header">
+      <img id="logo" class ="logo"src="images/logo1.jpeg" alt="logo">
+      <a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\login.html" class="buttonb">Login</a>
+      <a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\signup.html" class="buttonb">Signup</a>
+      <h1 align="center">Blockrealty</h1>
+    <h4 align="center">"21st century real estate website in India"</h4>
+  </div>
+  </div>
+
+  <ul>
+    <li><a class="active" href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\home.html">Home</a></li>
+    <li><a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\News.html">News</a></li>
+    <li><a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\Contact.html">Contact</a></li>
+    <li><a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\About.html">About</a></li>
+  </ul>
+  <br>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+      <img src="images/prop2.jpeg" style="width:100%">
+    <a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\prop1.html">
+       <button class="btn">Buy with crypto</button></a>
+    <div class="text">
+6🛏  5🛁  prime property</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+
+  <a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\login.html">
+    <img src="images/prop1.jpg" style="width:100%">
+    <div class="text" align="center">prime property 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/prop3.jpg" style="width:100%">
+    <div class="text">prime property 3</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <br>
+  <hr>
+  <footer>
+  <div class="social-icons">
+    <h3 align="center">Follow us on social media handles</h3>
+
+    <table align="center">
+      <tr>
+        <th> <a href="https://www.facebook.com/blockrealtyltd/" class="fa fa-facebook"></a></th>
+
+        <th> <a href="https://www.twitter.com/blockrealtyltd/" class="fa fa-twitter"></a></th>
+        <th> <a href="https://youtube.com/channel/UCCixGniwklsqXu1bPZlFCFw" class="fa fa-youtube"></a></th>
+        <th> <a href="https://www.instagram.com/blockrealtyltd/" class="fa fa-instagram"></a></th>
+
+
+      </tr>
+
+    </table>
+  </div>
+  </footer>
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+</body>
+
+</html>

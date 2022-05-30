@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styleprop.css">
+  <meta charset="utf-8">
+  <title>property</title>
+</head>
+
+<body>
+  <ul>
+    <li><a class="active" href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\home.html">Home</a></li>
+    <li><a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\News.html">News</a></li>
+    <li><a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\Contact.html">Contact</a></li>
+    <li><a href="C:\Users\FOUZAN-PC\Documents\Projects on my websites\Blockrealty.in\About.html">About</a></li>
+  </ul>
+  <br>
+  <hr>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/prop2.jpeg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/pic2.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/pic3.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic4.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic5.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic6.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic7.jpeg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+  <div class="row">
+    <div class="column">
+      <h1 class="h1">#7Dollars Colony,
+    RMV Extension  Stage2,Bangalore</h1>
+    </div>
+    <div class="column">
+      <h3 class="h3">Inr 2 cr</h3>
+      <p>Accepted cryptocurrencies:</p><br>
+      <button class="btn">BTC</button>
+      <button class="btn">ETH</button>
+      <br>
+        <button class="buttonb">Make offer</button>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+<script type="text/javascript">
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+
+</html>

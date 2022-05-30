@@ -1,0 +1,45 @@
+.h1 {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 70px;
+}
+.btn {
+ position: relative;
+ background-color: #DAF7A6;
+ color: black;
+ font-size: 16px;
+ cursor: pointer;
+ border-radius: 10px;
+ text-align: center;
+}
+.btn:hover {
+  background-color: green;
+}
+.h3 {
+  color: #3A3845;
+  font-size: 28px;
+  text-align: left;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.buttonb {
+background-color:#555555 ;
+opacity: 0.8;
+color: black;
+padding: 12px 24px;
+border-radius: 10px;
+text-align: center;
+font-size: 16px;
+cursor: pointer;
+}
+.buttonb:hover {
+  background-color:#555555;
+  opacity: 1;
+}
